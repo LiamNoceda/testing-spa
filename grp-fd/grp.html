@@ -3,10 +3,39 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1.0, user-scalable=no">
+    <title>grape spatial</title>
+
+    <link rel="stylesheet" href="https://rsms.me">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="sp">
+        <nav class="nav-sp">
+            <a href="#">Grape</a>
+            <a href="#">Grape</a>
+            <a href="#">Grape</a>
+        </nav>
+        <main class="main-sp"></main>
+        <aside class="aside-sp"></aside>
+    </div>
+</body>
+
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spatial</title>
 
     <style class="zero">
+        *,
         *::before,
         *::after {
             box-sizing: border-box;
@@ -19,11 +48,12 @@
             box-sizing: border-box;
             text-decoration: none;
 
-            overflow-y: auto;
+            overflow-y: scroll;
             scrollbar-gutter: stable;
 
             background-color: #222222;
             color: #ffffff;
+            font-family: sans-serif;
         }
 
         grp-sp,
@@ -31,7 +61,8 @@
         grp-logo,
         grp-search,
         grp-nav,
-        grp-main {
+        grp-main,
+        grp-side {
             display: block;
         }
     </style>
@@ -64,7 +95,7 @@
         }
 
         .sp-link-logo svg {
-            height: 45px;
+            height: 40px;
             width: auto;
         }
     </style>
@@ -78,7 +109,7 @@
     </style>
     <style class="navbar-sp">
         .navbar-sp {
-            width: 100px;
+            width: 72px;
             flex-shrink: 0;
             background-color: #1f1f1f;
         }
@@ -87,6 +118,13 @@
         .main-sp {
             flex-grow: 1;
             background-color: #141414;
+        }
+    </style>
+    <style class="sidebar-sp">
+        .sidebar-sp {
+            width: 72px;
+            flex-shrink: 0;
+            background-color: #1f1f1f;
         }
     </style>
 </head>
@@ -146,17 +184,23 @@
             <grp-search class="search-sp">
                 <div class="search">
                     <span class="search-name">Spatial Search</span>
-                    <input type="text" placeholder="Search..." />
-                    <button type="submit">Search</button>
+                    <input class="search-input" type="text" placeholder="Search..." />
+                    <button class="search-button" type="submit">Search</button>
                 </div>
             </grp-search>
         </grp-header>
 
         <grp-aside class="sp-aside">
-            <grp-nav id="navbar" class="navbar-sp"></grp-nav>
+            <grp-nav id="navbar" class="navbar-sp">
+                <div class="navbar-menu">
+                    <a href="#spatial" class="spatial" data-target="spatial">spatial</a>
+                    <a href="#message" class="message" data-target="message">message</a>
+                </div>
+            </grp-nav>
             <grp-main id="main" class="main-sp"></grp-main>
+            <grp-side id="sidebar" class="sidebar-sp"></grp-side>
         </grp-aside>
     </grp-sp>
 </body>
 
-</html>
+</html> -->
