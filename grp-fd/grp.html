@@ -9,198 +9,41 @@
 
     <link rel="stylesheet" href="https://rsms.me">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="zero.css">
 </head>
 
 <body>
     <div class="sp">
-        <nav class="nav-sp">
-            <a href="#">Grape</a>
-            <a href="#">Grape</a>
-            <a href="#">Grape</a>
+        <nav id="sp-nav" class="nav-sp">
+            <a href="#" data-room="" title="">Grape</a>
+            <a href="#" data-room="" title="">Grape</a>
+            <a href="#" data-room="" title="">Grape</a>
         </nav>
-        <main class="main-sp"></main>
-        <aside class="aside-sp"></aside>
+        <main id="sp-main" class="main-sp"></main>
+        <aside id="sp-aside" class="aside-sp">
+            <a href="#">Grape</a>
+            <a href="#">Grape</a>
+            <a href="#">Grape</a>
+        </aside>
     </div>
+
+    <template id="editer">
+        <form class="creation-bar">
+            <select class="type-select">
+                <option>Text</option>
+                <option>Photo</option>
+                <option>Video</option>
+            </select>
+            <input type="text" placeholder="" class="content-input">
+            <button type="submit">Send</button>
+        </form>
+    </template>
+
+    <template id="room">
+        <div class="grid-card">
+            <div class="content"></div>
+        </div>
+    </template>
 </body>
 
 </html>
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spatial</title>
-
-    <style class="zero">
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-        }
-
-        html,
-        body {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            text-decoration: none;
-
-            overflow-y: scroll;
-            scrollbar-gutter: stable;
-
-            background-color: #222222;
-            color: #ffffff;
-            font-family: sans-serif;
-        }
-
-        grp-sp,
-        grp-header,
-        grp-logo,
-        grp-search,
-        grp-nav,
-        grp-main,
-        grp-side {
-            display: block;
-        }
-    </style>
-    <style class="GRP-SP">
-        .GRP-SP {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-    </style>
-    <style class="sp-header">
-        .sp-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            height: 60px;
-            box-sizing: border-box;
-            padding: 0 25px;
-            background-color: #1a1a1a;
-            flex-shrink: 0;
-        }
-
-        .sp-link-logo {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: auto;
-            height: 100%;
-            padding: 0 14px 0 16px;
-        }
-
-        .sp-link-logo svg {
-            height: 40px;
-            width: auto;
-        }
-    </style>
-    <style class="sp-aside">
-        .sp-aside {
-            display: flex;
-            flex-direction: row;
-            flex-grow: 1;
-            width: 100%;
-        }
-    </style>
-    <style class="navbar-sp">
-        .navbar-sp {
-            width: 72px;
-            flex-shrink: 0;
-            background-color: #1f1f1f;
-        }
-    </style>
-    <style class="main-sp">
-        .main-sp {
-            flex-grow: 1;
-            background-color: #141414;
-        }
-    </style>
-    <style class="sidebar-sp">
-        .sidebar-sp {
-            width: 72px;
-            flex-shrink: 0;
-            background-color: #1f1f1f;
-        }
-    </style>
-</head>
-
-<body>
-    <grp-sp class="GRP-SP">
-
-        <grp-header class="sp-header">
-            <grp-logo class="sp-logo">
-                <a href="/" class="sp-link-logo">
-                    <svg width="306" height="537" viewBox="0 0 306 537" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g id="static logo">
-                            <g id="grape group">
-                                <g id="Group 8">
-                                    <path id="Vector 3"
-                                        d="M102.248 3.72232C131.451 12.0258 182.531 50.1371 153.232 136.155L66.0489 85.2406C86.6126 80.1399 132.839 83.1818 153.232 136.155L102.248 3.72232Z"
-                                        fill="#00CC66" />
-                                </g>
-                                <g id="circle">
-                                    <g id="center">
-                                        <path id="Ellipse 49"
-                                            d="M100 287C100 314.614 77.6142 337 50 337C22.3858 337 0 314.614 0 287C0 259.386 22.3858 237 50 237C77.6142 237 100 259.386 100 287Z"
-                                            fill="white" />
-                                        <path id="Ellipse 50"
-                                            d="M203 287C203 314.614 180.614 337 153 337C125.386 337 103 314.614 103 287C103 259.386 125.386 237 153 237C180.614 237 203 259.386 203 287Z"
-                                            fill="white" />
-                                        <path id="Ellipse 51"
-                                            d="M306 287C306 314.614 283.614 337 256 337C228.386 337 206 314.614 206 287C206 259.386 228.386 237 256 237C283.614 237 306 259.386 306 287Z"
-                                            fill="white" />
-                                    </g>
-                                    <g id="up">
-                                        <path id="Ellipse 52"
-                                            d="M150 187C150 214.614 127.614 237 100 237C72.3858 237 50 214.614 50 187C50 159.386 72.3858 137 100 137C127.614 137 150 159.386 150 187Z"
-                                            fill="white" />
-                                        <path id="Ellipse 54"
-                                            d="M256 187C256 214.614 233.614 237 206 237C178.386 237 156 214.614 156 187C156 159.386 178.386 137 206 137C233.614 137 256 159.386 256 187Z"
-                                            fill="white" />
-                                    </g>
-                                    <g id="down">
-                                        <path id="Ellipse 53"
-                                            d="M200 487C200 514.614 177.614 537 150 537C122.386 537 100 514.614 100 487C100 459.386 122.386 437 150 437C177.614 437 200 459.386 200 487Z"
-                                            fill="white" />
-                                        <path id="Ellipse 55"
-                                            d="M256 387C256 414.614 233.614 437 206 437C178.386 437 156 414.614 156 387C156 359.386 178.386 337 206 337C233.614 337 256 359.386 256 387Z"
-                                            fill="white" />
-                                        <path id="Ellipse 56"
-                                            d="M150 387C150 414.614 127.614 437 100 437C72.3858 437 50 414.614 50 387C50 359.386 72.3858 337 100 337C127.614 337 150 359.386 150 387Z"
-                                            fill="white" />
-                                    </g>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
-                </a>
-            </grp-logo>
-
-            <grp-search class="search-sp">
-                <div class="search">
-                    <span class="search-name">Spatial Search</span>
-                    <input class="search-input" type="text" placeholder="Search..." />
-                    <button class="search-button" type="submit">Search</button>
-                </div>
-            </grp-search>
-        </grp-header>
-
-        <grp-aside class="sp-aside">
-            <grp-nav id="navbar" class="navbar-sp">
-                <div class="navbar-menu">
-                    <a href="#spatial" class="spatial" data-target="spatial">spatial</a>
-                    <a href="#message" class="message" data-target="message">message</a>
-                </div>
-            </grp-nav>
-            <grp-main id="main" class="main-sp"></grp-main>
-            <grp-side id="sidebar" class="sidebar-sp"></grp-side>
-        </grp-aside>
-    </grp-sp>
-</body>
-
-</html> -->

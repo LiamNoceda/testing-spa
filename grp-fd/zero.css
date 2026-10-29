@@ -32,13 +32,14 @@ body {
     width: 100%;
     height: 100%;
 
-    padding: 8px;
-    gap: 8px;
+    padding: 16px;
+    gap: 12px;
 
     border: 1px solid #ffffff;
 }
 
 .nav-sp {
+    position: sticky;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,12 +48,12 @@ body {
     padding: 16px 0;
 
     flex-shrink: 0;
-    width: 70px !important;
+    width: 55px !important;
     height: auto;
 
     background-color: rgba(255, 255, 255, 0.75);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 32px;
+    border-radius: 0 45px 45px 0;
     overflow: hidden;
 }
 
@@ -70,6 +71,7 @@ body {
 }
 
 .aside-sp {
+    position: sticky;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,12 +79,12 @@ body {
     padding: 16px 0;
 
     flex-shrink: 0;
-    width: 70px !important;
+    width: 55px !important;
     height: auto;
 
     background-color: rgba(255, 255, 255, 0.75);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 32px;
+    border-radius: 45px 0 0 45px;
     overflow: hidden;
 }
 
@@ -129,69 +131,3 @@ body {
 .aside-sp a:active {
     transform: scale(0.95);
 }
-
-/* *,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-html,
-body {
-    min-height: 100vh;
-    width: 100vw;
-    overflow-y: auto; 
-    overflow-x: hidden;
-
-    background-color: #0f1115;
-    color: #ffffff;
-
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    text-rendering: optimizeSpeed;
-    
-    -webkit-text-size-adjust: none;
-    text-size-adjust: none;
-    line-height: 1.5;
-}
-
-.sp {
-    display: contents;
-}
-
-.nav-sp {
-    position: fixed; 
-    top: 16px;
-    left: 16px;
-    z-index: 9999;
-
-    width: 72px !important;
-    min-width: 72px !important; 
-    max-width: 72px !important;
-    
-    height: calc(100vh - 32px); 
-
-    background-color: #ffffff;
-    border-radius: 32px;
-    overflow: hidden;
-
-    will-change: transform;
-    transform: translateZ(0);
-}
-
-.main-sp {
-    display: block;
-    
-    height: auto; 
-    min-height: calc(100vh - 32px);
-
-    background-color: aqua; 
-    border-radius: 32px;
-    
-    margin: 16px 16px 16px 104px; 
-    padding: 20px;
-    
-    min-width: 320px;
-} */
